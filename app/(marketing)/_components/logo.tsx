@@ -16,6 +16,15 @@ const Logo = () => {
               width={40}
               height={40}
               alt="logo"
+              className="dark:hidden"
+            />
+
+            <Image
+              src="/logo-dark.svg"
+              width={40}
+              height={40}
+              alt="logo"
+              className="hidden dark:block"
             />
             <p className={cn("font-semibold", font.className)}>MNotion</p>
 
