@@ -126,7 +126,8 @@ const Navigation = () => {
                 </div>
                 <div className="mt-4">
                    <DocumentList />
-                </div>
+                    <Item onClick={handleCreate} label="Add a Page" icon={PlusCircle} />
+                </div> 
                 <div 
                     onMouseDown={handleMouseDown} 
                     onClick={resetWidth} 
