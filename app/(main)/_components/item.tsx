@@ -62,6 +62,7 @@ const Item = ({ id, documentIcon, active, expanded, isSearch, level = 0, onExpan
         })
     }
     const ChevronIcon = expanded ? ChevronDown : ChevronRight;
+
     return ( 
         <div 
             onClick={onClick} 
@@ -71,7 +72,7 @@ const Item = ({ id, documentIcon, active, expanded, isSearch, level = 0, onExpan
             active && "bg-primary/5 text-primary"
             )}>
                 {!!id && (
-                    <div role="button" className="h-full rounded-sm hover:bg-neutral-300 dark:bg-neutral-600 mr-1" onClick={handleExpand}>
+                    <div role="button" className="h-full rounded-sm hover:bg-neutral-300 dark:hover:bg-neutral-600 mr-1" onClick={handleExpand}>
                         <ChevronIcon className="shrink-0 h-4 w-4 mr-2 text-muted-foreground/50 " />
                     </div>
                 )}
