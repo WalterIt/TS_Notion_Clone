@@ -22,9 +22,9 @@ export const Navbar = ({ isCollapsed, onResetWidth }: NavbarProps) => {
 
     if (document === undefined) {
         return (
-            <div className="flex flex-col items-center justify-center gap-8 flex-1 px-6 pb-10">
-                Loading...
-            </div>
+            <nav className="bg-background dark:bg-[#1F1F1F] px-3 py-2 w-full flex items-center">
+                <Title.Skeleton />
+            </nav>
         )
     }
 
@@ -37,7 +37,6 @@ export const Navbar = ({ isCollapsed, onResetWidth }: NavbarProps) => {
                     <MenuIcon role="button" onClick={onResetWidth} className="text-muted-foreground h-6 w-6 cursor-pointer"  />
                 )}
                 <div className="flex items-center justify-between w-full">
-                    {/* This is NavBar! */}
                     <Title  initialData={document} />
                 </div>
 
