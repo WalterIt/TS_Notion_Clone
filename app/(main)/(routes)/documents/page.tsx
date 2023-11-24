@@ -31,7 +31,7 @@ const DocumentsPage = () => {
             </h2>
             <Button onClick={onCreate} >
                 <PlusCircle className="mr-2 h-4 w-4" />
-                Create a Note
+                Create a Note!
             </Button>
         </div>
      );
