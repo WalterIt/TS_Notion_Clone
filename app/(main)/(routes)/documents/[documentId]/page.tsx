@@ -32,4 +32,4 @@ const DocumentIdPage = ({ params }: DocumentIdPageProps) => {
      );
 }
  
-export default DocumentIdPage;
+export default DocumentIdPage;    
