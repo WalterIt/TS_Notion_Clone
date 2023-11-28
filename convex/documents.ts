@@ -220,7 +220,7 @@ export const getById = query({
       return document;
     }
   });
-  
+
 
   export const update = mutation({
     args: {
