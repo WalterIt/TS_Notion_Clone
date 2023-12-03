@@ -29,7 +29,7 @@ const DocumentsPage = () => {
             <Image src="/empty.png" width="300" height="300" alt="Empty" className="dark:hidden" />
             <Image src="/empty-dark.png" width="300" height="300" alt="Empty" className="dark:block hidden" />
             <h2 className="text-lg font-medium">
-                Welcome to <b>{user?.username?.toUpperCase()}&apos;s</b> MNotion!
+                Welcome to <b>{user?.username?.toUpperCase()}&apos;s</b> My Notion!
             </h2>
             <Button onClick={onCreate} >
                 <PlusCircle className="mr-2 h-4 w-4" />
