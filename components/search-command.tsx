@@ -8,7 +8,7 @@ import { useUser } from '@clerk/clerk-react';
 import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
 import { useSearch } from '@/hooks/use-search';
 import { api } from '@/convex/_generated/api';
-
+ 
 const SearchCommand = () => {
     const { user } = useUser();
     const router = useRouter();
@@ -36,7 +36,8 @@ const SearchCommand = () => {
     }, [toggle])
 
     const onSelect = (id: string) => {
-        router.push(`/documents/${id}`);
+        // console.log(id.split('-')[0]);
+        router.push(`/documents/${id.split('-')[0]}`);
         onClose();
     }
 
